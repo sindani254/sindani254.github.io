@@ -697,6 +697,10 @@ select {
     margin-left: 0;
 }
 
+#orders_transit {
+    overflow-x: auto;
+}
+
 
 
 

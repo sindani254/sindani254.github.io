@@ -22,35 +22,44 @@
     <body>
 
 
-          <div class="container">
+        <div class="container">
 
 
-                <!-- HEADER SECTION BEGINS HERE -->
-                <header>
-                    <div class="header">
-                        <a href="index.html" class="logo">
-                            <img src="img/logo.png" alt="logo">
-                        </a>
-                        <div class="search">
-                            <form class="search-form">
-                                <input type="text" placeholder="Search ..">
-                                <input type="submit" value="Submit">
-                            </form>
-                        </div>
-                        <div class="header-right">
-                            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
-                            <a href="signup.html"><i class="fas fa-user-plus"></i> Register</a>
-                            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
-                        </div>
+            <!-- HEADER SECTION BEGINS HERE -->
+            <header>
+                
+                <div class="header">
+
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+
+                    <div class="search">
+
+                        <form class="search-form">
+                            <input type="text" placeholder="Search ..">
+                            <input type="submit" value="Submit">
+                        </form>
+
                     </div>
-                    
-                </header>
-                <!-- HEADER SECTION ENDS HERE -->
+
+                    <div class="header-right">
+
+                        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a href="signup.html"><i class="fas fa-user-plus"></i> Register</a>
+                        <a href="admin.html"><i class="fas fa-hammer"></i> Admin</a>
+
+                    </div>
+                </div>
+                
+            </header>
+            <!-- HEADER SECTION ENDS HERE -->
 
 
 
 
-                <form id="user_form">
+            <form id="user_form" name="user_form" method="POST">
+
                 <div id="form_header">
                     <h3>User Login</h3>
                     <p><i id="login_icon" class="fas fa-sign-in-alt"></i></p>
@@ -58,8 +67,9 @@
                 </div>
                 <hr>
 
-                <input type="text" class="txt_field" placeholder="Enter Email" name="email" required />
-                <input type="password" class="txt_field" placeholder="Enter Password" name="psw" required />
+                <input type="email" class="txt_field" placeholder="email" name="email" required />
+
+                <input type="password" class="txt_field" placeholder="password" name="psw" required />
 
                 <p>
                     <label class="rem">
@@ -75,58 +85,65 @@
                 <br>
                 <div class="clearfix">
                   <a href="index.html"><button type="button" class="cancelbtn">Cancel / Go back</button></a>
-                  <button type="submit" class="signupbtn">Login</button>
+                  <button type="submit" class="signupbtn" onclick="formVal()">
+                      Login
+                  </button>
                 </div>
+
             </form>
 
 
 
-                 <br>
-                <div class="content">
-                    <div class="footer-grids">
-                        <div class="footer one">
-                            <h3> About Us </h3>
-                            <p> SendIT is a global company with one of the most recognized and admired brands in the world. We have become the world's largest package delivery company and a leading global provider of specialized transportation and logistics services. Every day, we manage the flow of goods, funds, and information in more than 200 countries and territories worldwide.</p>
-                            <p class="manu">- Emmanuel Sindani, CEO</p>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="footer two">
-                            <h3>Keep Connected</h3>
-                            <ul>
-                                <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
-                                <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
-                                <li><a class="fb2" href="#"><i></i>Add us on Google Plus</a></li>
-                                <li><a class="fb3" href="#"><i></i>Follow us on Dribbble</a></li>
-                                <li><a class="fb4" href="#"><i></i>Follow us on Pinterest</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer three">
-                            <h3>Contact Information</h3>
-                            <ul>
-                                <li>SendIT <span>P.O. Box (00100) - 357,</span>Nairobi, Kenya.</li>
-                                <li>(+254) 074 668 3785  </li>
-                                <li><a href="crimsoftit@gmail.com">crimsoftit@gmail.com</a> </li>
-                            </ul>
-                        </div>
+             <br>
+            <div class="content">
+                <div class="footer-grids">
+                    <div class="footer one">
+                        <h3> About Us </h3>
+                        <p> SendIT is a global company with one of the most recognized and admired brands in the world. We have become the world's largest package delivery company and a leading global provider of specialized transportation and logistics services. Every day, we manage the flow of goods, funds, and information in more than 200 countries and territories worldwide.</p>
+                        <p class="manu">- Emmanuel Sindani, CEO</p>
                         <div class="clear"></div>
                     </div>
-                    <div class="copy-right-grids">
-                        <div class="copy-left">
-                                <p class="footer-gd">© 2018 SendIT. All Rights Reserved | Design by <a href="https://manu1919.github.io/" target="_blank">Crimsoft</a></p>
-                        </div>
-                        <div class="copy-right">
-                            <ul>
-                                <li><a href="#">Company Information</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
+                    <div class="footer two">
+                        <h3>Keep Connected</h3>
+                        <ul>
+                            <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
+                            <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
+                            <li><a class="fb2" href="#"><i></i>Add us on Google Plus</a></li>
+                            <li><a class="fb3" href="#"><i></i>Follow us on Dribbble</a></li>
+                            <li><a class="fb4" href="#"><i></i>Follow us on Pinterest</a></li>
+                        </ul>
                     </div>
+                    <div class="footer three">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li>SendIT <span>P.O. Box (00100) - 357,</span>Nairobi, Kenya.</li>
+                            <li>(+254) 074 668 3785  </li>
+                            <li><a href="crimsoftit@gmail.com">crimsoftit@gmail.com</a> </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="copy-right-grids">
+                    <div class="copy-left">
+                            <p class="footer-gd">© 2018 SendIT. All Rights Reserved | Design by <a href="https://manu1919.github.io/" target="_blank">Crimsoft</a></p>
+                    </div>
+                    <div class="copy-right">
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
+        </div>
 
-
+            <script type="text/javascript">
+                function formVal() {
+                    window.open("profile.html", "_self");
+                }
+            </script>
        
     </body>
 </html>

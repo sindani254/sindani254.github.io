@@ -1,14 +1,11 @@
 
-* {
-    box-sizing: border-box;
-}
-
 .edit_input {
     width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    font-family: Century Gothic;
 }
 
 label {
@@ -17,19 +14,7 @@ label {
     font-size: 14px;
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
 .container {
     border-radius: 5px;
@@ -67,6 +52,11 @@ input[type=submit]:hover {
     margin-top: 10px;
     color: #F79054;
     font-size: 14px;
+}
+
+.admin_edit_select {
+    margin-top: -20px;
+    font-family: Century Gothic;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

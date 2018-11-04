@@ -18,7 +18,7 @@
                 <label for="lname">Destination</label>
             </div>
             <div class="col-75">
-                <input class="edit_input" type="text" id="lname" name="lastname" value="Nairobi" />
+                <input class="edit_input" type="text" id="lname" name="lastname" value="Nairobi" readonly/>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
                 <label for="country">Pickup Location</label>
             </div>
             <div class="col-75">
-                <input class="edit_input" type="text" id="lname" name="lastname" value="Dandora" />
+                <input class="edit_input" type="text" id="lname" name="lastname" value="Dandora" readonly/>
             </div>
         </div>
 
@@ -45,7 +45,7 @@
                 <label for="country">Price(Ksh)</label>
             </div>
             <div class="col-75">
-                <input class="edit_input" type="number" id="price" name="price" value="70000" />
+                <input class="edit_input" type="number" id="price" name="price" value="70000" readonly />
             </div>
         </div>
 
@@ -54,33 +54,41 @@
                 <label for="country">Quantity</label>
             </div>
             <div class="col-75">
-                <input class="edit_input" type="number" id="price" name="price" />
+                <input class="edit_input" type="number" value="20" id="price" name="price" readonly />
             </div>
         </div>
 
 
 
         <div class="row">
+
             <div class="col-25">
                 <label for="subject">Status</label>
             </div>
             <div class="col-75">
                 <div class="status1">
+
                     <p class="pending_status">
-                        <i class="fa fa-clock-o"></i> in transit
+                        <select class="admin_edit_select">
+                            <option selected disabled> Select Status </option>
+                            <option>In Transit</option>
+                            <option>Delivered</option>
+                        </select>
                     </p>
+
                 </div>
             </div>
         </div>
 
         <div class="row">
+            
             <div class="col-25">
                 
             </div>
             <div class="col-75">
                 <div class="status1">
                     <p class="pending_status">
-                        <button class="update">
+                        <button class="update" type="submit">
                             <i class="fas fa-cogs"></i> Update Details
                         </button>
                         <button class="cancel">
